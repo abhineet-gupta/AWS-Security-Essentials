@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
     backend "s3" {
-        bucket = "abedra-yow-tfstate"
+        bucket = "abhi-yow-tfstate"
         key = "iam/terraform.tfstate"
         region = "ap-southeast-2"
     }
@@ -14,7 +14,7 @@ variable "read_only_users" {
   type = "list"
   description = "Users that are allowed to assume ReadOnly rights"
   default = [
-    "abedra"
+    "abhi"
   ]
 }
 
@@ -22,7 +22,7 @@ variable "admin_users" {
   type = "list"
   description = "Users that are allowed to assume full Admin rights"
   default = [
-    "abedra"
+    "abhi"
   ]
 }
 
